@@ -1,6 +1,5 @@
 package personnages;
 
-import java.security.PublicKey;
 import personnages.Chef;
 import personnages.Gaulois;
 
