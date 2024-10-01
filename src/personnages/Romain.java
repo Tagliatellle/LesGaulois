@@ -23,24 +23,21 @@ public class Romain {
 	}
 
 	public void recevoirCoup(int forceCoup) {
-		assert forceEstToujoursPositive();
 		int forceDebut = force;
 		force -= forceCoup;
+		assert forceEstToujoursPositive();
 		if (force > 0) {
 			parler("Aïe");
 		} else {
 			parler("J'abandonne...");
 		}
-		assert forceADiminue(forceDebut);
+		assert (forceDebut>force);
 	}
 	
 	private boolean forceEstToujoursPositive() {
 		return force>0;
 	}
 	
-	private boolean forceADiminue(int forceDepart) {
-		return forceDepart>force;
-	}
 	
 	public static void main(String[] args) {
 		Romain bus = new Romain("Bus", 6);

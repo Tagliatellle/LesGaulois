@@ -1,8 +1,5 @@
 package personnages;
 
-import personnages.Chef;
-import personnages.Gaulois;
-
 public class Village {
 	private String nom;
 	private Chef chef;
