@@ -1,17 +1,17 @@
 package personnages;
 
 public enum Equipement {
-	public enum CASQUE {
-		
+
+	CASQUE("casque"), BOUCLIER("bouclier");
+
+	private String nom;
+
+	private Equipement(String nom) {
+		this.nom = nom;
 	}
-	
-	public enum BOUCLIER {
-		
-		private String nom;
-		
-		private BOUCLIER(String nom) {
-			this.nom = nom;
-		}
-		
+
+	@Override
+	public String toString() {
+		return this.nom;
 	}
 }
