@@ -41,7 +41,6 @@ public class Romain {
 		return force>0;
 	}
 	
-	// Méthode pour équiper le soldat
     public void sEquiper(Equipement equipement) {
         switch (nbEquipements) {
             case 2:
@@ -62,7 +61,6 @@ public class Romain {
         }
     }
     
- // Méthode privée pour ajouter un équipement
     private void ajouterEquipement(Equipement equipement) {
         equipements[nbEquipements] = equipement;
         nbEquipements++;
